@@ -93,3 +93,51 @@
     @apply p-10 border border-solid border-[$F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
   }
 }
+
+
+/* Wave Animation */
+@keyframes wave {
+  0% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+
+.animate-wave {
+  animation: wave 30s infinite linear;
+}
+
+/* Background Dots Animation */
+@keyframes moveDots {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-5%, -5%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.dot {
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  background-image: radial-gradient(white 1px, transparent 0);
+  background-size: 10px 10px;
+  animation: moveDots 10s infinite alternate ease-in-out;
+}
+
+.dot.delay-1 {
+  animation-delay: 3s;
+}
+
+.dot.delay-2 {
+  animation-delay: 6s;
+}
