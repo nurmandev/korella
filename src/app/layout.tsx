@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Light Saas Landing Page",
-  description: "Template by Harindu",
+  title: "Korella Ai",
+  description: "Discover how AI can transform your business",
 };
 
 export default function RootLayout({
