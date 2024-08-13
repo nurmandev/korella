@@ -1,13 +1,11 @@
-import { CallToAction } from "@/app/(landing-page)/_components/CallToAction";
-import { Footer } from "@/app/(landing-page)/_components/Footer";
+"use client";
 import { Header } from "@/app/(landing-page)/_components/Header";
-// import { Hero } from "@/app/(landing-page)/_components/Hero";
 import { SecondSection } from "@/app/(landing-page)/_components/second-section";
-// import { ThirdSection } from "@/app/(landing-page)/_components/third-section";
-import { Pricing } from "@/app/(landing-page)/_components/Pricing";
-import { Testimonials } from "@/app/(landing-page)/_components/Testimonials";
 import { Hero } from "./_components/Hero";
 import { ThirdSection } from "./_components/third-section";
+import { ContactForm } from "./_components/ContactForm";
+import { Footer } from "@/components/Footer";
+// import { Footer } from "./_components/Footer";
 
 export default function Home() {
   return (
@@ -16,10 +14,8 @@ export default function Home() {
       <Hero />
       <SecondSection />
       <ThirdSection />
-      {/* <Pricing />
-      <Testimonials />
-      <CallToAction />
-      <Footer /> */}
+      <ContactForm />
+      <Footer />
     </>
   );
 }

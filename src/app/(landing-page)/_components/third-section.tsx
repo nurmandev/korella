@@ -68,7 +68,7 @@ export const ThirdSection: React.FC = () => {
               width={500}
               height={500}
               alt="Cog Image"
-              animate={{ translateY: [-30, 30] }}
+              animate={{ translateY: [30, -30] }}
               transition={{
                 repeat: Infinity,
                 repeatType: "mirror",
