@@ -4,7 +4,8 @@ import ArrowRight from "@/assets/arrow-right.svg";
 import { Button } from "@/components/ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-
+import Wave from "@/assets/wave.svg";
+import secondImage from "@/assets/second-home.png";
 export const Hero = () => {
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -26,8 +27,10 @@ export const Hero = () => {
       {/* Wave Animation */}
       <div className="absolute bottom-0 w-full overflow-hidden pointer-events-none">
         <img
-          src="/path-to-your-wave-image.png" // Update this with the correct path to your wave image
+          src={Wave} // Update this with the correct path to your wave image
           alt="Wave Animation"
+          width={500}
+          height={500}
           className="w-full h-auto animate-wave"
         />
       </div>

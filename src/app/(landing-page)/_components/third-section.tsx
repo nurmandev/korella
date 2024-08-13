@@ -1,124 +1,87 @@
+"use client";
+
 import React from "react";
-// Layout
-import Balancer from "react-wrap-balancer";
-import Link from "next/link";
+import loAsset from "@/assets/loAsset.png";
+import Cog from "@/assets/cog.png";
+import Image from "next/image";
 
-// Icons
-import { Coins, ArrowRight } from "lucide-react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+export const ThirdSection: React.FC = () => {
+  const heroRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start end", "end start"],
+  });
+  const translateY = useTransform(scrollYProgress, [0, 1], [200, -200]);
 
-type FeatureText = {
-  icon: JSX.Element;
-  title: string;
-  description: string;
-  href?: string;
-  cta?: string;
-};
-
-const featureText: FeatureText[] = [
-  {
-    icon: <Coins className="h-6 w-6" />,
-    title: "Lorem Ipsum",
-    href: "/",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    cta: "Learn More",
-  },
-  {
-    icon: <Coins className="h-6 w-6" />,
-    title: "Lorem Ipsum",
-    href: "/",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    cta: "Learn More",
-  },
-  {
-    icon: <Coins className="h-6 w-6" />,
-    title: "Lorem Ipsum",
-    href: "/",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    cta: "Learn More",
-  },
-  {
-    icon: <Coins className="h-6 w-6" />,
-    title: "Lorem Ipsum",
-    href: "/",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    cta: "Learn More",
-  },
-];
-
-const singleFeatureText: FeatureText[] = [
-  {
-    icon: <Coins className="h-6 w-6" />,
-    title: "Lorem Ipsum",
-    href: "/",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    cta: "Learn More",
-  },
-];
-
-export const ThirdSection = () => {
   return (
-    <section className="relative mt-8 pb-20 md:pt-5 md:pb-10 bg-black overflow-x-clip">
-      <div className="not-prose p-10 m-10">
-        <div className="flex flex-col gap-6 bg: #141414; text-white">
-          <h3 className="text-4xl">
-            <Balancer>Why Choose Voice Assistant?</Balancer>
-          </h3>
+    <div className="bg-white py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+        <h1 className="font-space-grotesk text-4xl font-bold leading-[61.25px] mb-4 text-center">
+          Discover the Magic of AI
+        </h1>
+        <p className="text-black-300 mb-12 text-center">
+          Step into the future with Korella.ai! Our innovative AI solutions are
+          designed to transform your business. Explore our magical products and
+          see how they can bring efficiency and delight to your operations.
+        </p>
 
-          <div className="mt-6 grid gap-6 md:mt-12 md:grid-cols-2">
-            {featureText.map(
-              ({ icon, title, description, href, cta }, index) => (
-                <Link
-                  href={`${href}`}
-                  className="flex flex-col justify-between gap-6 rounded-lg border p-16 transition-all hover:-mt-2 hover:mb-2"
-                  key={index}
-                >
-                  <div className="grid gap-4">
-                    {icon}
-                    <h4 className="text-xl text-primary">{title}</h4>
-                    <p className="text-base opacity-75">{description}</p>
-                  </div>
-                  {cta && (
-                    <div className="flex h-fit items-center text-sm font-semibold">
-                      <p>{cta}</p> <ArrowRight className="ml-2 h-4 w-4" />
-                    </div>
-                  )}
-                </Link>
-              )
-            )}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-white">
+          {/* Speech Analytics Card */}
+          <div className="bg-[#0d1132] rounded-lg p-8">
+            <h2 className="font-space-grotesk text-4xl font-light leading-[61.25px] mb-4">
+              Unlock the secrets of your conversations.
+            </h2>
+            <button className="bg-transparent border-2 border-white text-white py-2 px-4 rounded-lg mt-4 hover:bg-white hover:text-[#0d1132]">
+              Speech Analytics
+            </button>
+            <motion.img
+              src={loAsset.src}
+              width={500}
+              height={500}
+              alt="Speech Analytics"
+              className="mb-4"
+              animate={{ translateY: [-30, 30] }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "mirror",
+                duration: 3,
+                ease: "easeInOut",
+              }}
+            />
+            <button className="bg-transparent border-2 border-white text-white py-2 px-4 rounded-lg mt-4 hover:bg-white hover:text-[#0d1132]">
+              Unveil the Magic &rarr;
+            </button>
           </div>
-          <div>
-            {singleFeatureText.map(
-              ({ icon, title, description, href, cta }, index) => (
-                <Link
-                  href={`${href}`}
-                  className="flex flex-col justify-between gap-6 rounded-lg border bg-muted/25 p-6 transition-all hover:-mt-2 hover:mb-2"
-                  key={index}
-                >
-                  <div className="grid gap-4">
-                    {icon}
-                    <div className="">
-                      <h4 className="text-xl text-primary inline-flex border border-white/10 px-3 py-1 rounded-lg tracking-tight text-white">
-                        {title}
-                      </h4>
-                    </div>
-                    <p className="text-base opacity-75">{description}</p>
-                  </div>
-                  {cta && (
-                    <div className="flex h-fit items-center text-sm font-semibold">
-                      <p>{cta}</p> <ArrowRight className="ml-2 h-4 w-4" />
-                    </div>
-                  )}
-                </Link>
-              )
-            )}
+
+          {/* Voice Assistant Card */}
+          <div className="bg-[#0d1132] rounded-lg p-8">
+            <h2 className="font-space-grotesk text-4xl font-light leading-[61.25px] mb-4">
+              Korella AI assistant for your business.
+            </h2>
+            <button className="bg-transparent border-2 border-white text-white py-2 px-4 rounded-lg mt-4 hover:bg-white hover:text-[#0d1132]">
+              Voice Assistant
+            </button>
+            <motion.img
+              src={Cog.src}
+              width={500}
+              height={500}
+              alt="Cog Image"
+              animate={{ translateY: [-30, 30] }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "mirror",
+                duration: 3,
+                ease: "easeInOut",
+              }}
+            />
+            <button className="bg-transparent border-2 border-white text-white py-2 px-4 rounded-lg mt-4 hover:bg-white hover:text-[#0d1132]">
+              Summon Your Korella &rarr;
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };

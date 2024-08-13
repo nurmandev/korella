@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '@fontsource/space-grotesk/300.css'; /* For weight 300 */
+@import '@fontsource/space-grotesk/400.css'; /* For other weights if needed */
 
 @layer base {
   :root {
