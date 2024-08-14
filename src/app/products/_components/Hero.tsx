@@ -43,6 +43,10 @@ export const Hero = () => {
                 Get for free
                 <ArrowRight className="size-5" />
               </Button>
+              {/* <Button variant="ghost" className="gap-1">
+              <span>Learn more</span>
+              <ArrowRight className="size-5" />
+            </Button> */}
             </div>
           </div>
           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">

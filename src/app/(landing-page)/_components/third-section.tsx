@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import ArrowRight from "@/assets/arrow-right.svg";
 import loAsset from "@/assets/loAsset.png";
 import Cog from "@/assets/cog.png";
 import Image from "next/image";
@@ -50,8 +51,8 @@ export const ThirdSection: React.FC = () => {
                 ease: "easeInOut",
               }}
             />
-            <button className="bg-transparent border-2 border-white text-white py-2 px-4 rounded-lg mt-4 hover:bg-white hover:text-[#0d1132]">
-              Unveil the Magic &rarr;
+            <button className="bg-transparent border-2 border-white text-white py-2 px-4 flex gap-1 items-center rounded-lg mt-4 hover:bg-white hover:text-[#0d1132]">
+              Unveil the Magic <ArrowRight className="size-5" />
             </button>
           </div>
 
@@ -76,8 +77,8 @@ export const ThirdSection: React.FC = () => {
                 ease: "easeInOut",
               }}
             />
-            <button className="bg-transparent border-2 border-white text-white py-2 px-4 rounded-lg mt-4 hover:bg-white hover:text-[#0d1132]">
-              Summon Your Korella &rarr;
+            <button className="bg-transparent border-2 border-white text-white py-2 px-4 flex gap-1 items-center rounded-lg mt-4 hover:bg-white hover:text-[#0d1132]">
+              Summon Your Korella <ArrowRight className="size-5" />
             </button>
           </div>
         </div>

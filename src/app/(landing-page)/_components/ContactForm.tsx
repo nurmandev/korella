@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import ArrowRight from "@/assets/arrow-right.svg";
 import secondImage from "@/assets/second-home.png";
 import Image from "next/image";
 
@@ -45,8 +48,8 @@ export const ContactForm: React.FC = () => {
                   placeholder="Your message"
                 ></textarea>
               </div>
-              <button className="bg-[#0d1132] border-2 border-black text-white py-2 px-4 rounded-lg mt-4 hover:bg-[#aab1ee] hover:text-[#0d1132]">
-                Send Message &rarr;
+              <button className="bg-[#0d1132] border-2 border-black text-white py-2 px-4 flex gap-1 items-center  rounded-lg mt-4 hover:bg-[#aab1ee] hover:text-[#0d1132]">
+                Send Message<ArrowRight className="size-5" />
               </button>
             </form>
           </div>

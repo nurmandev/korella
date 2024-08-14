@@ -1,7 +1,7 @@
 "use client";
 
 import ArrowRight from "@/assets/arrow-right.svg";
-import cogImage from "@/assets/cog.png";
+import cogImage from "@/assets/loAsset.png";
 import cylinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
 import { Button } from "@/components/ui/button";
@@ -31,11 +31,11 @@ export const Hero = () => {
               Discover how AI can transform your business
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-white to-gray-300 text-transparent bg-clip-text mt-6">
-              Revolutionize Customer Interactions
+              Unlock the Power of Conversation
             </h1>
             <p className="text-xl text-white tracking-tight mt-6">
               {
-                "Streamline customer interactions with advanced AI, providing efficient, personalized support and reducing wait times."
+                "Extract valuable insights, improve customer service, ensure compliance, and optimize business processes."
               }
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
@@ -43,10 +43,6 @@ export const Hero = () => {
                 Get for free
                 <ArrowRight className="size-5" />
               </Button>
-              {/* <Button variant="ghost" className="gap-1">
-              <span>Learn more</span>
-              <ArrowRight className="size-5" />
-            </Button> */}
             </div>
           </div>
           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
