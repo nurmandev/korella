@@ -5,7 +5,9 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <div className="block md:hidden">
+        <Navbar />
+      </div>
       <Contact />
       <Footer />
     </>

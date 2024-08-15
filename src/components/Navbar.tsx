@@ -23,7 +23,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white p-1 m-2 justify-center align-middle md:w-[1000px] rounded]">
+    <nav className="bg-white border-2 m-auto justify-center align-middle md:w-[1000px] rounded z-10 overflow-x-clip md:my-10 font-space-grotesk">
       <div className="container mx-auto px-4 py-4 flex items-center text-left justify-between">
         <Image src={Logo} alt="Korella AI Logo" height={20} width={60} />
 
@@ -54,14 +54,15 @@ export default function Navbar() {
                     </p>
                   </div>
                   <div className="w-1/2 space-y-2">
-                    <div className="flex items-center space-x-2">
+                    <a href="/product" className="flex items-center space-x-2">
                       <span className="text-blue-400 text-[1rem]">*</span>
                       <div>
                         <h4 className="font-semibold">Speech Analytics</h4>
                         <p className="text-sm">Extract valuable insights...</p>
                       </div>
-                    </div>
-                    <div className="flex items-center space-x-2">
+                    </a>
+
+                    <a href="/products" className="flex items-center space-x-2">
                       <span className="text-blue-400 text-[1rem]">*</span>
                       <div>
                         <h4 className="font-semibold">Voice Assistant</h4>
@@ -69,7 +70,7 @@ export default function Navbar() {
                           Streamline customer interactions...
                         </p>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <hr className="my-2" />
@@ -165,6 +166,10 @@ export default function Navbar() {
               </div>
             )}
           </div>
+
+          <div className="flex justify-center gap-1 items-center">
+            <a href="/contact">Contact Us</a>
+          </div>
         </div>
 
         <div className="flex justify-center gap-1 items-center">
@@ -201,7 +206,9 @@ export default function Navbar() {
             {openDropdown === "products" && (
               <div className="bg-white shadow-md p-4">
                 <div className="space-y-2">
-                  <h4 className="font-semibold">Speech Analytics</h4>
+                  <a href="/product" className="font-semibold">
+                    Speech Analytics
+                  </a>
                   <p className="text-sm">Extract valuable insights...</p>
                   <h4 className="font-semibold">Voice Assistant</h4>
                   <p className="text-sm">Streamline customer interactions...</p>
