@@ -1,7 +1,8 @@
 "use client";
-import { Header } from "@/app/(landing-page)/_components/Header";
-import { SecondSection } from "@/app/(landing-page)/_components/second-section";
+
+import Navbar from "@/components/Navbar";
 import { Hero } from "./_components/Hero";
+import { SecondSection } from "@/app/(landing-page)/_components/second-section";
 import { ThirdSection } from "./_components/third-section";
 import { ContactForm } from "./_components/ContactForm";
 import { Footer } from "@/components/Footer";
@@ -9,7 +10,9 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      <Header />
+      <div className="block md:hidden">
+        <Navbar />
+      </div>
       <Hero />
       <SecondSection />
       <ThirdSection />

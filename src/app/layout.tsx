@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
-      <body className={cn(dmSans.className, "antialiased bg-[#EAEEFE]")}>
+      <body className={cn(dmSans.className, "antialiased bg-[#fff]")}>
         {children}
       </body>
     </html>

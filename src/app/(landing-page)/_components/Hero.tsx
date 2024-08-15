@@ -6,6 +6,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Wave from "@/assets/wave.svg";
 import secondImage from "@/assets/second-home.png";
+import Navbar from "@/components/Navbar";
+
 export const Hero = () => {
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -19,20 +21,8 @@ export const Hero = () => {
       ref={heroRef}
       className="relative flex flex-col items-center justify-center h-screen text-center bg-gradient-to-b from-blue-900 to-black overflow-hidden"
     >
-      {/* Background Dots */}
-      <div className="absolute inset-0 flex justify-center items-center">
-        <div className="bg-[radial-gradient(circle,#fff_0.2_1px,transparent_1px)] bg-[size:10px_10px] w-[50%] h-[50%] opacity-30 animate-moveDots"></div>
-      </div>
-
-      {/* Wave Animation */}
-      <div className="absolute bottom-0 w-full overflow-hidden pointer-events-none">
-        <img
-          src={Wave} // Update this with the correct path to your wave image
-          alt="Wave Animation"
-          width={500}
-          height={500}
-          className="w-full h-auto animate-wave"
-        />
+      <div className="hidden md:block">
+        <Navbar />
       </div>
 
       {/* Hero Content */}

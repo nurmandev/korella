@@ -7,7 +7,7 @@ import { ProductShowcase } from "@/app/company/_components/ProductShowcase";
 import { Testimonials } from "@/app/company/_components/Testimonials";
 import { Footer } from "@/components/Footer";
 
-export default function Home() {
+export default function Company() {
   return (
     <>
       <Header />
