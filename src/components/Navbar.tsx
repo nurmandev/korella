@@ -25,7 +25,9 @@ export default function Navbar() {
   return (
     <nav className="bg-white border-2 m-auto justify-center align-middle md:w-[1000px] rounded z-10 overflow-x-clip md:my-10 font-space-grotesk">
       <div className="container mx-auto px-4 py-4 flex items-center text-left justify-between">
-        <Image src={Logo} alt="Korella AI Logo" height={20} width={60} />
+        <a href="/">
+          <Image src={Logo} alt="Korella AI Logo" height={20} width={60} />
+        </a>
 
         <div className="hidden md:flex space-x-8 items-center mx-auto">
           <div className="relative">
@@ -210,7 +212,9 @@ export default function Navbar() {
                     Speech Analytics
                   </a>
                   <p className="text-sm">Extract valuable insights...</p>
-                  <h4 className="font-semibold">Voice Assistant</h4>
+                  <a href="/products" className="font-semibold">
+                    Voice Assistant
+                  </a>
                   <p className="text-sm">Streamline customer interactions...</p>
                 </div>
                 <hr className="my-2" />

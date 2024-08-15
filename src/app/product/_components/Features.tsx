@@ -69,12 +69,12 @@ const featuresData: FeatureData[] = [
 
 const FeatureCard = ({ title, description, features }: FeatureData) => {
   return (
-    <div className="flex justify-between bg-[#222222] p-6 md:p-8 lg:p-10 rounded-lg w-full h-full shadow-[inset_0px_0px_20px_0px_#54545433]">
-      <div className="flex flex-col justify-center w-[100px] ">
-        <h2 className="font-space-grotesk text-2xl md:text-2xl font-semibold text-white mb-4">
+    <div className="flex justify-between bg-[#222222] p-6 md:p-8 lg:p-10 rounded-lg md:w-[1000px] h-[240px] shadow-[inset_0px_0px_20px_0px_#54545433]">
+      <div className="flex flex-col justify-left w-[100px]">
+        <h2 className="font-space-grotesk text-1xl md:text-2xl font-semibold text-white mb-4">
           {title}
         </h2>
-        <p className="font-space-grotesk text-xl md:text-2xl font-light text-white">
+        <p className="font-space-grotesk text-1xl md:text-1xl text-white">
           {description}
         </p>
       </div>
@@ -101,7 +101,7 @@ export const FeatureSection: NextPage = () => {
       <h1 className="font-space-grotesk text-1xl md:text-5xl font-semibold text-white mb-10 text-left">
         Key Features
       </h1>
-      <div className="grid gap-6 w-full max-w-6xl grid-cols-1 md:grid-cols-2">
+      <div className="lg:[grid gap-6 w-full max-w-6xl grid-cols-1 md:grid-cols-1] flex flex-col">
         {featuresData.map((feature, index) => (
           <FeatureCard
             key={index}
