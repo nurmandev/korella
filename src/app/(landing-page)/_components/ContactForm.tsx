@@ -7,8 +7,8 @@ import Image from "next/image";
 
 export const ContactForm: React.FC = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-md max-w-10xl w-full">
+    <div className="flex justify-center items-center min-h-screen md:mx-40 font-space-grotesk">
+      <div className="p-8 rounded-lg max-w-10xl w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <h2 className="text-2xl font-bold mb-4">Stay Connected with Us</h2>
@@ -49,15 +49,16 @@ export const ContactForm: React.FC = () => {
                 ></textarea>
               </div>
               <button className="bg-[#0d1132] border-2 border-black text-white py-2 px-4 flex gap-1 items-center  rounded-lg mt-4 hover:bg-[#aab1ee] hover:text-[#0d1132]">
-                Send Message<ArrowRight className="size-5" />
+                Send Message
+                <ArrowRight className="size-5" />
               </button>
             </form>
           </div>
           <div className="flex justify-center items-center">
             <Image
               src={secondImage}
-              width={500}
-              height={500}
+              width={300}
+              height={100}
               alt="Team working"
               className="rounded-lg shadow-md object-cover w-full"
             />

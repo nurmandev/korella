@@ -9,18 +9,19 @@ import Navbar from "@/components/Navbar";
 export const Contact: React.FC = () => {
   return (
     <>
-      <div className="flex justify-center items-center min-h-screen bg-white md:pt-36">
-        <div className="bg-white p-8 rounded-lg shadow-md max-w-10xl w-full">
+      <div className="flex justify-center items-center min-h-screen md:mx-40 font-space-grotesk md:pt-36">
+        <div className="p-8 rounded-lg max-w-10xl w-full">
+          <div className=" text-center mb-5">
+            <h2 className="text-2xl font-bold mb-4 md:text-6xl">
+              Get in Touch
+            </h2>
+            <p className="text-gray-600 mb-6">
+              Wee&apos;re here to help and answer any questions you might have.
+              We look forward to hearing from you.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h2 className="text-2xl font-bold mb-4">
-                Stay Connected with Us
-              </h2>
-              <p className="text-gray-600 mb-6">
-                We&apos;d love to hear from you! Whether you have questions,
-                feedback, or need assistance, our team is here to help. Reach
-                out to us through any of the following ways.
-              </p>
               <form className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700">
@@ -61,8 +62,8 @@ export const Contact: React.FC = () => {
             <div className="flex justify-center items-center">
               <Image
                 src={secondImage}
-                width={500}
-                height={500}
+                width={300}
+                height={50}
                 alt="Team working"
                 className="rounded-lg shadow-md object-cover w-full"
               />
