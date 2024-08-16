@@ -102,7 +102,7 @@ export default function Navbar() {
                     </p>
                   </div>
                   <div className="w-1/2 space-y-2">
-                    <a href="/products">
+                    <a href="/speech">
                       <div className="flex items-center space-x-2">
                         <span className="text-blue-400 text-[1rem]">*</span>
                         <div>
@@ -111,7 +111,7 @@ export default function Navbar() {
                         </div>
                       </div>
                     </a>
-                    <a href="/products">
+                    <a href="/voice">
                       <div className="flex items-center space-x-2">
                         <span className="text-blue-400 text-[1rem]">*</span>
                         <div>
@@ -120,7 +120,7 @@ export default function Navbar() {
                         </div>
                       </div>
                     </a>
-                    <a href="/products">
+                    <a href="/combo">
                       <div className="flex items-center space-x-2">
                         <span className="text-blue-400 text-[1rem]">*</span>
                         <div>
@@ -149,7 +149,7 @@ export default function Navbar() {
               />
             </button>
             {openDropdown === "company" && (
-              <div className="absolute left-[-522px] mt-2 w-[1000px] bg-[#F5F5F5] shadow-md p-4 rounded-tl-lg">
+              <div className="absolute left-[-475px] mt-2 w-[1000px] bg-[#F5F5F5] shadow-md p-4 rounded-tl-lg">
                 <div className="flex">
                   <div className="w-1/2">
                     <h3 className="font-semibold">Who we are</h3>
@@ -159,7 +159,9 @@ export default function Navbar() {
                     <div className="flex items-center space-x-2">
                       <span className="text-blue-400 text-[1rem]">*</span>
                       <div>
-                        <h4 className="font-semibold">About us</h4>
+                        <a href="/about-us" className="font-semibold">
+                          About us
+                        </a>
                         <div className="flex space-x-2">
                           <FaFacebook />
                           <FaInstagram />
@@ -218,7 +220,9 @@ export default function Navbar() {
                     Speech Analytics
                   </a>
                   <p className="text-sm">Extract valuable insights...</p>
-                  <h4 className="font-semibold">Voice Assistant</h4>
+                  <a href="/produts" className="font-semibold">
+                    Voice Assistant
+                  </a>
                   <p className="text-sm">Streamline customer interactions...</p>
                 </div>
                 <hr className="my-2" />
@@ -240,9 +244,13 @@ export default function Navbar() {
             {openDropdown === "pricing" && (
               <div className="bg-white shadow-md p-4">
                 <div className="space-y-2">
-                  <h4 className="font-semibold">Speech Analytics</h4>
+                  <a href="/speech" className="font-semibold">
+                    Speech Analytics
+                  </a>
                   <p className="text-sm">Select a plan that meets...</p>
-                  <h4 className="font-semibold">Voice Assistant</h4>
+                  <a href="/voice" className="font-semibold">
+                    Voice Assistant
+                  </a>
                   <p className="text-sm">Select a plan that meets...</p>
                   <h4 className="font-semibold">Combo Plan</h4>
                   <p className="text-sm">A convenient plan...</p>
@@ -266,7 +274,9 @@ export default function Navbar() {
             {openDropdown === "company" && (
               <div className="bg-white shadow-md p-4">
                 <div className="space-y-2">
-                  <h4 className="font-semibold">About us</h4>
+                  <a href="/about-us" className="font-semibold">
+                    About us
+                  </a>
                   <div className="flex space-x-2">
                     <FaFacebook />
                     <FaInstagram />
