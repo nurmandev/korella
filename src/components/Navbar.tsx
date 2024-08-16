@@ -102,27 +102,33 @@ export default function Navbar() {
                     </p>
                   </div>
                   <div className="w-1/2 space-y-2">
-                    <div className="flex items-center space-x-2">
-                      <span className="text-blue-400 text-[1rem]">*</span>
-                      <div>
-                        <h4 className="font-semibold">Speech Analytics</h4>
-                        <p className="text-sm">Select a plan that meets...</p>
+                    <a href="/products">
+                      <div className="flex items-center space-x-2">
+                        <span className="text-blue-400 text-[1rem]">*</span>
+                        <div>
+                          <h4 className="font-semibold">Speech Analytics</h4>
+                          <p className="text-sm">Select a plan that meets...</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <span className="text-blue-400 text-[1rem]">*</span>
-                      <div>
-                        <h4 className="font-semibold">Voice Assistant</h4>
-                        <p className="text-sm">Select a plan that meets...</p>
+                    </a>
+                    <a href="/products">
+                      <div className="flex items-center space-x-2">
+                        <span className="text-blue-400 text-[1rem]">*</span>
+                        <div>
+                          <h4 className="font-semibold">Voice Assistant</h4>
+                          <p className="text-sm">Select a plan that meets...</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <span className="text-blue-400 text-[1rem]">*</span>
-                      <div>
-                        <h4 className="font-semibold">Combo Plan</h4>
-                        <p className="text-sm">A convenient plan...</p>
+                    </a>
+                    <a href="/products">
+                      <div className="flex items-center space-x-2">
+                        <span className="text-blue-400 text-[1rem]">*</span>
+                        <div>
+                          <h4 className="font-semibold">Combo Plan</h4>
+                          <p className="text-sm">A convenient plan...</p>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <hr className="my-2" />
@@ -212,9 +218,7 @@ export default function Navbar() {
                     Speech Analytics
                   </a>
                   <p className="text-sm">Extract valuable insights...</p>
-                  <a href="/products" className="font-semibold">
-                    Voice Assistant
-                  </a>
+                  <h4 className="font-semibold">Voice Assistant</h4>
                   <p className="text-sm">Streamline customer interactions...</p>
                 </div>
                 <hr className="my-2" />

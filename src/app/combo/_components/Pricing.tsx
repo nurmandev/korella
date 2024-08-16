@@ -7,93 +7,47 @@ import { motion } from "framer-motion";
 
 const pricingTiers = [
   {
-    title: "Free",
-    monthlyPrice: 0,
-    buttonText: "Get started for free",
+    monthlyPrice: "7.90",
+    buttonText: "Get started",
     popular: false,
     inverse: false,
-    features: [
-      "Up to 5 project members",
-      "Unlimited tasks and projects",
-      "2GB storage",
-      "Integrations",
-      "Basic support",
-    ],
+    features: ["For usage less 50 hours per month"],
   },
   {
-    title: "Pro",
-    monthlyPrice: 9,
-    buttonText: "Sign up now",
+    monthlyPrice: "7.40",
+    buttonText: "Get started",
     popular: true,
     inverse: true,
-    features: [
-      "Up to 50 project members",
-      "Unlimited tasks and projects",
-      "50GB storage",
-      "Integrations",
-      "Priority support",
-      "Advanced support",
-      "Export support",
-    ],
+    features: ["For usage less than 100 hours per month"],
   },
   {
-    title: "Business",
-    monthlyPrice: 19,
-    buttonText: "Sign up now",
+    monthlyPrice: "6.90",
+    buttonText: "Get started",
     popular: false,
     inverse: false,
-    features: [
-      "Up to 5 project members",
-      "Unlimited tasks and projects",
-      "200GB storage",
-      "Integrations",
-      "Dedicated account manager",
-      "Custom fields",
-      "Advanced analytics",
-      "Export capabilities",
-      "API access",
-      "Advanced security features",
-    ],
+    features: ["For usage less than 100 hours per month"],
   },
 ];
 
 export const Pricing = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-black">
       <div className="container">
-        <div className="max-w-[540px] mx-auto">
-          <h2 className="section-title">Pricing</h2>
-          <p className="section-description mt-5">
-            {
-              "Free forever. Upgrade for unlimited tasks, better security, and exclusive features."
-            }
-          </p>
-        </div>
         <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center">
           {pricingTiers.map(
-            ({
-              title,
-              monthlyPrice,
-              buttonText,
-              popular,
-              inverse,
-              features,
-            }) => (
+            ({ monthlyPrice, buttonText, popular, inverse, features }) => (
               <div
-                key={title}
                 className={cn(
-                  "p-10 border border-solid border-[$F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full",
-                  { "border-black bg-black text-white": inverse === true }
+                  "p-10 border border-solid border-[#222222] rounded-3xl max-w-xs w-full",
+                  { "bg-[#222222] text-white": inverse === true }
                 )}
               >
                 <div className="flex justify-between">
                   <h3
-                    className={cn("text-lg font-bold text-black/50", {
-                      "text-white/60": inverse === true,
+                    className={cn("text-lg font-bold text-white", {
+                      "text-white": inverse === true,
                     })}
-                  >
-                    {title}
-                  </h3>
+                  ></h3>
                   {popular === true && (
                     <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-white/20">
                       <motion.span
@@ -111,29 +65,28 @@ export const Pricing = () => {
                     </div>
                   )}
                 </div>
-                <div className="flex items-baseline gap-1 mt-[30px]">
+                <div className="flex items-baseline gap-1 mt-[30px] text-white">
                   <span className="text-4xl font-bold tracking-tighter leading-0">
                     ${monthlyPrice}
                   </span>
                   <span
-                    className={cn("tracking-tight font-bold text-black/50", {
+                    className={cn("tracking-tight font-bold text-white", {
                       "text-white": inverse === true,
                     })}
                   >
-                    /month
+                    /Per hour
                   </span>
                 </div>
                 <Button
                   className={cn("w-full mt-[30px]", {
-                    "bg-white text-black hover:bg-white": inverse === true,
+                    "bg-white text-[#222222] hover:bg-white": inverse === true,
                   })}
                 >
                   {buttonText}
                 </Button>
-                <ul className="flex flex-col gap-5 mt-8">
+                <ul className="flex flex-col gap-5 mt-8 text-white text-4xl">
                   {features.map((feature, index) => (
                     <li key={index} className="text-sm flex items-center gap-4">
-                      <CheckIcon className="size-6" />
                       <span>{feature}</span>
                     </li>
                   ))}

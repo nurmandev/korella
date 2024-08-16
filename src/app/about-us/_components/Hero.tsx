@@ -1,68 +1,44 @@
 "use client";
 
 import ArrowRight from "@/assets/arrow-right.svg";
-import cogImage from "@/assets/cog.png";
-import cylinderImage from "@/assets/cylinder.png";
-import noodleImage from "@/assets/noodle.png";
-import { Button } from "@/components/ui/button";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import HomeImage from "@/assets/home-image.png";
+
+import Image from "next/image";
 
 export const Hero = () => {
-  const heroRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ["start end", "end start"],
-  });
-  const translateY = useTransform(scrollYProgress, [0, 1], [200, -200]);
-
   return (
     <section
-      ref={heroRef}
-      className="relative mt-8 pb-20 md:pt-5 md:pb-10 bg-black overflow-x-clip"
+      className="relative flex flex-col items-start max-w-screen-lg mx-auto p-6 lg:p-0 gap-16 opacity-100"
+      style={{ top: "220px" }}
     >
-      <div className="absolute inset-0 flex justify-center items-center">
-        <div className="bg-[radial-gradient(circle,#fff_0.2_1px,transparent_1px)] bg-[size:10px_10px] w-[50%] h-[50%] opacity-30"></div>
+      <div className="text-left">
+        <div className="flex justify-between align-bottom text-center">
+          <h1 className="text-4xl lg:text-5xl font-bold mb-4 ">Who We Are</h1>
+          <button className="bg-black border-2 border-white text-white py-2 px-4 flex gap-1 items-center rounded-lg mt-4 hover:bg-white hover:text-[#0d1132] text-center">
+            Get Started <ArrowRight className="size-5" />
+          </button>
+        </div>
+
+        <p className="text-xl lg:text-2xl font-light mb-8">
+          Innovating customer interactions with cutting-edge AI solutions
+        </p>
+        <p className="text-base lg:text-lg font-light text-gray-600">
+          At Korella.ai, we are passionate about transforming the way businesses
+          interact with their customers. Our cutting-edge AI solutions empower
+          organizations to unlock valuable insights, streamline operations, and
+          enhance customer satisfaction.
+        </p>
       </div>
-      <div className="container relative z-10 text-white">
-        <div className="md:flex items-center">
-          <div className="md:w-[478px]">
-            <div className="text-sm inline-flex border border-white/10 px-3 py-1 rounded-lg tracking-tight">
-              Discover how AI can transform your business
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-white to-gray-300 text-transparent bg-clip-text mt-6">
-              Revolutionize Customer Interactions
-            </h1>
-            <p className="text-xl text-white tracking-tight mt-6">
-              {
-                "Streamline customer interactions with advanced AI, providing efficient, personalized support and reducing wait times."
-              }
-            </p>
-            <div className="flex gap-1 items-center mt-[30px]">
-              <Button>
-                Get for free
-                <ArrowRight className="size-5" />
-              </Button>
-              {/* <Button variant="ghost" className="gap-1">
-              <span>Learn more</span>
-              <ArrowRight className="size-5" />
-            </Button> */}
-            </div>
-          </div>
-          <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
-            <motion.img
-              src={cogImage.src}
-              alt="Cog Image"
-              className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:left-0"
-              animate={{ translateY: [-30, 30] }}
-              transition={{
-                repeat: Infinity,
-                repeatType: "mirror",
-                duration: 3,
-                ease: "easeInOut",
-              }}
-            />
-          </div>
+
+      <div className="flex justify-between w-full">
+        <div className="flex-1">
+          <Image
+            src={HomeImage}
+            alt="Team working"
+            width={1312}
+            height={829}
+            className="rounded-lg"
+          />
         </div>
       </div>
     </section>
