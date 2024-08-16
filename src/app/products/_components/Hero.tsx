@@ -19,7 +19,7 @@ export const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="relative mt-8 pb-20 md:pt-5 md:pb-10 bg-black overflow-x-clip"
+      className="relative pb-20 md:pt-5 md:pb-10 bg-black overflow-x-clip"
     >
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="bg-[radial-gradient(circle,#fff_0.2_1px,transparent_1px)] bg-[size:10px_10px] w-[50%] h-[50%] opacity-30"></div>
