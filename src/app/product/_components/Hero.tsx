@@ -20,7 +20,7 @@ export const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="relative mt-8 pb-20 md:pt-5 md:pb-10 bg-black"
+      className="relative pt-5 md:px-20 md:pb-10 bg-black overflow-x-clip"
     >
       <div className="hidden md:block">
         <Navbar />
@@ -28,10 +28,10 @@ export const Hero = () => {
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="bg-[radial-gradient(circle,#fff_0.2_1px,transparent_1px)] bg-[size:10px_10px] w-[50%] h-[50%] opacity-30"></div>
       </div>
-      <div className="container relative z-10 text-white">
+      <div className="container md:pt-[100px] md:p-[20px] relative z-10 text-white">
         <div className="md:flex items-center">
           <div className="md:w-[478px]">
-            <div className="text-sm inline-flex border border-white/10 px-3 py-1 rounded-lg tracking-tight">
+            <div className="text-sm inline-flex border bg-white text-black border-white/10 px-3 py-1 rounded-lg tracking-tight">
               Discover how AI can transform your business
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-white to-gray-300 text-transparent bg-clip-text mt-6">

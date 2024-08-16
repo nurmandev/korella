@@ -122,7 +122,9 @@ export default function Navbar() {
                 >
                   <span className="text-blue-500 text-2xl">*</span>
                   <div>
-                    <h4 className="font-semibold mb-2">Voice Assistant</h4>
+                    <a href="/products" className="font-semibold mb-2">
+                      Voice Assistant
+                    </a>
                     <p className="text-sm">
                       Streamline customer interactions with advanced AI,
                       providing efficient, personalized support and reducing
@@ -145,10 +147,7 @@ export default function Navbar() {
                 </p>
               </div>
               <div className="w-2/3 space-y-2">
-                <a
-                  href="/products"
-                  className="flex gap-3 items-start space-x-2"
-                >
+                <a href="/speech" className="flex gap-3 items-start space-x-2">
                   <span className="text-blue-600 text-2xl">*</span>
                   <div>
                     <h4 className="font-semibold mb-2">Speech Analytics</h4>
@@ -158,10 +157,7 @@ export default function Navbar() {
                     </p>
                   </div>
                 </a>
-                <a
-                  href="/products"
-                  className="flex gap-3 items-start space-x-2"
-                >
+                <a href="/voice" className="flex gap-3 items-start space-x-2">
                   <span className="text-blue-600 text-2xl">*</span>
                   <div>
                     <h4 className="font-semibold mb-2">Voice Assistant</h4>
@@ -171,10 +167,7 @@ export default function Navbar() {
                     </p>
                   </div>
                 </a>
-                <a
-                  href="/products"
-                  className="flex gap-3 items-start space-x-2"
-                >
+                <a href="/combo" className="flex gap-3 items-start space-x-2">
                   <span className="text-blue-600 text-2xl">*</span>
                   <div>
                     <h4 className="font-semibold mb-2">Combo Plan</h4>
