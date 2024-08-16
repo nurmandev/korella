@@ -22,7 +22,7 @@ export default function RootLayout({
         {children}
 
         {/* JavaScript code for snow effect*/}
-        <Script src="/snowEffect.js" defer>
+        <Script src="/snowEffect.js" defer id="snow-effect-script">
           {`
             console.log('JavaScript code running in RootLayout');
           `}
