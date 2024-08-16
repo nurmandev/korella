@@ -10,7 +10,7 @@ import {
   FaChevronRight,
 } from "react-icons/fa";
 import Image from "next/image";
-import Logo from "@/assets/logo.png";
+import Logo from "@/assets/korella-logo.jpg";
 import { CiMenuFries } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
 import { ArrowRight } from "lucide-react";
@@ -29,7 +29,7 @@ export default function Navbar() {
       <nav className="md:absolute md:left-1/2 top-0 md:-translate-x-1/2 bg-white border-2 mx-auto justify-center align-middle w-full md:w-[1000px] rounded z-50 overflow-x-clip md:my-10 font-space-grotesk">
         <div className="container mx-auto px-4 py-4 flex items-center text-left justify-between">
           <a href="/">
-            <Image src={Logo} alt="Korella AI Logo" height={20} width={60} />
+            <Image src={Logo} alt="Korella AI Logo" height={30} width={80} />
           </a>
 
           <div className="hidden md:flex space-x-8 items-center mx-auto">
