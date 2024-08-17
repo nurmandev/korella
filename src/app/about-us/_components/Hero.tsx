@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <section className="relative flex flex-col items-start max-w-screen-xl mx-auto p-6 lg:px-0 pt-16 md:pt-52 gap-16 opacity-100 font-space-grotesk">
+    <section className="relative flex flex-col items-start max-w-screen-xl p-6 md:mx-20 lg:px-0 pt-16 md:pt-52 gap-16 opacity-100 font-space-grotesk">
       <div className="text-left">
         <div className="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 lg:mb-0">
