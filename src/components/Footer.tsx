@@ -1,4 +1,4 @@
-import Logo from "@/assets/logo.png";
+import Logo from "@/assets/korella-logo.jpg";
 import Image from "next/image";
 
 export const Footer = () => {
@@ -8,8 +8,8 @@ export const Footer = () => {
         <div className="bg-white text-black p-6 rounded-lg shadow-lg max-w-sm w-full">
           <Image
             src={Logo}
-            height={40}
-            width={32}
+            height={60}
+            width={100}
             alt="Saas Logo"
             className="relative"
           />

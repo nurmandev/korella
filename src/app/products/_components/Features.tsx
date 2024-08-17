@@ -23,14 +23,18 @@ interface FeatureData {
 
 const featuresData: FeatureData[] = [
   {
-    title: "Pattern Recognition",
-    description: "Identify patterns, trends, and anomalies in spoken language.",
+    title: "Routine Inquiry Handling",
+    description:
+      "Programmed to handle routine inquiries and tasks efficiently.",
     features: [
-      { icon: <FaChartBar />, text: "Identification of recurring themes" },
-      { icon: <FaMicrophone />, text: "Speech-to-text transcription accuracy" },
+      {
+        icon: <FaChartBar />,
+        text: "Programmed to handle routine inquiries and tasks efficiently.",
+      },
+      { icon: <FaMicrophone />, text: "Task automation for common requests" },
       {
         icon: <FaMicrophone />,
-        text: "Detection of anomalies in conversations",
+        text: "Task automation for common requests",
       },
     ],
   },
