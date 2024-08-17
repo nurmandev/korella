@@ -4,6 +4,8 @@ import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 import Image1 from "@/assets/people1.png";
 import Image2 from "@/assets/people2.png";
+import Image3 from "@/assets/people3.png";
+import Image4 from "@/assets/people3.png";
 import ArrowRight from "@/assets/arrow-right.svg";
 
 import Image from "next/image";
@@ -29,12 +31,22 @@ const data = [
     image: Image2,
     role: "Team Lead",
   },
+  {
+    name: "Collaboration",
+    image: Image3,
+    role: "Team Lead",
+  },
+  {
+    name: "Collaboration",
+    image: Image2,
+    role: "Team Lead",
+  },
 ];
 
 export const People = () => {
   return (
     <section className="bg-[#EBF6FF]">
-      <div className="relative flex flex-col items-start max-w-screen-xl mx-auto p-6 lg:p-0 lg:py-28  gap-12 opacity-100 font-space-grotesk mt-16 ">
+      <div className="relative flex flex-col items-start max-w-screen-xl mx-20 p-6 lg:p-0 lg:py-28  gap-12 opacity-100 font-space-grotesk mt-16 ">
         <div className="text-left">
           <div className="flex justify-between align-bottom text-center">
             <h2 className="text-4xl lg:text-5xl font-bold mb-4 ">

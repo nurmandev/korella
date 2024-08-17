@@ -10,13 +10,13 @@ export const Contact: React.FC = () => {
   return (
     <>
       <div className="flex justify-center items-center min-h-screen md:mx-40 font-space-grotesk md:pt-36">
-        <div className="p-8 rounded-lg max-w-10xl w-full">
-          <div className=" text-center mb-5">
+        <div className="p-8 rounded-lg max-w-6xl w-full">
+          <div className="text-center mb-5 md:w-4/5 md:mx-auto">
             <h2 className="text-2xl font-bold mb-4 md:text-6xl">
               Get in Touch
             </h2>
-            <p className="text-gray-600 mb-6">
-              Wee&apos;re here to help and answer any questions you might have.
+            <p className="text-gray-600 mb-6 md:text-lg">
+              We&apos;re here to help and answer any questions you might have.
               We look forward to hearing from you.
             </p>
           </div>
@@ -48,7 +48,7 @@ export const Contact: React.FC = () => {
                     Your Message
                   </label>
                   <textarea
-                    className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm resize-none"
                     rows={4}
                     placeholder="Your message"
                   ></textarea>
@@ -65,7 +65,7 @@ export const Contact: React.FC = () => {
                 width={300}
                 height={50}
                 alt="Team working"
-                className="rounded-lg shadow-md object-cover w-full"
+                className="rounded-lg shadow-md object-cover w-full h-full max-h-[400px]"
               />
             </div>
           </div>

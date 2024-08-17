@@ -19,7 +19,7 @@ export const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="relative flex flex-col items-center justify-center   text-center bg-gradient-to-b from-blue-900 to-black overflow-hidden"
+      className="relative flex flex-col items-center justify-center text-center bg-gradient-to-b from-blue-900 to-black overflow-hidden"
     >
       {/* Hero Content */}
       <div className="container relative z-10 text-white text-center pt-20 md:pt-48">
@@ -42,7 +42,14 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <Image src={Wave} alt="Korella AI Logo" />
+      <Image
+        src={Wave}
+        alt="Wave background"
+        layout="responsive"
+        width={1920}
+        height={1080}
+        className="w-full object-cover"
+      />
     </section>
   );
 };

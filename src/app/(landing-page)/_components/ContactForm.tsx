@@ -8,14 +8,16 @@ import Image from "next/image";
 export const ContactForm: React.FC = () => {
   return (
     <div className="flex justify-center items-center min-h-screen md:mx-40 font-space-grotesk">
-      <div className="p-8 rounded-lg max-w-10xl w-full">
+      <div className="p-8 rounded-lg max-w-6xl w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <h2 className="text-2xl font-bold mb-4">Stay Connected with Us</h2>
-            <p className="text-gray-600 mb-6">
-              We&apos;d love to hear from you! Whether you have questions,
-              feedback, or need assistance, our team is here to help. Reach out
-              to us through any of the following ways.
+            <h2 className="text-2xl font-bold mb-4 md:text-4xl">
+              Stay Connected with Us
+            </h2>
+            <p className="text-gray-600 mb-6 md:text-lg">
+              We'd love to hear from you! Whether you have questions, feedback,
+              or need assistance, our team is here to help. Reach out to us
+              through any of the following ways.
             </p>
             <form className="space-y-4">
               <div>
@@ -43,12 +45,12 @@ export const ContactForm: React.FC = () => {
                   Your Message
                 </label>
                 <textarea
-                  className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm resize-none"
                   rows={4}
                   placeholder="Your message"
                 ></textarea>
               </div>
-              <button className="bg-[#0d1132] border-2 border-black text-white py-2 px-4 flex gap-1 items-center  rounded-lg mt-4 hover:bg-[#aab1ee] hover:text-[#0d1132]">
+              <button className="bg-[#0d1132] border-2 border-black text-white py-2 px-4 flex gap-1 items-center rounded-lg mt-4 hover:bg-[#aab1ee] hover:text-[#0d1132]">
                 Send Message
                 <ArrowRight className="size-5" />
               </button>
@@ -60,7 +62,7 @@ export const ContactForm: React.FC = () => {
               width={300}
               height={100}
               alt="Team working"
-              className="rounded-lg shadow-md object-cover w-full"
+              className="rounded-lg shadow-md object-cover w-full max-h-[400px]"
             />
           </div>
         </div>
