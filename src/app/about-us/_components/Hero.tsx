@@ -9,7 +9,7 @@ export const Hero = () => {
   return (
     <section className="relative flex flex-col items-start max-w-screen-xl mx-auto p-6 lg:px-0 pt-16 md:pt-52 gap-16 opacity-100 font-space-grotesk">
       <div className="text-left">
-        <div className="flex justify-between align-bottom text-center">
+        <div className="flex justify-between align-bottom text-center ">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4 ">Who We Are</h1>
           <button className="bg-black border-2 border-white text-white py-2 px-4 flex gap-1 items-center rounded-lg mt-4 hover:bg-white hover:text-[#0d1132] text-center">
             Get Started <ArrowRight className="size-5" />

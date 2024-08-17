@@ -190,7 +190,9 @@ export default function Navbar() {
               <div className="w-2/3 space-y-2">
                 <div className="flex items-center space-x-2">
                   <div>
-                    <h4 className="font-semibold mb-2">About us</h4>
+                    <a href="/about-us" className="font-semibold mb-2">
+                      About us
+                    </a>
                     <div className="flex gap-5 space-x-2">
                       <FaFacebook />
                       <FaLinkedin />
@@ -257,17 +259,23 @@ export default function Navbar() {
               {openDropdown === "pricing" && (
                 <div className=" p-4">
                   <div className="space-y-2">
-                    <h4 className="font-semibold">Speech Analytics</h4>
+                    <a href="/speech" className="font-semibold">
+                      Speech Analytics
+                    </a>
                     <p className="text-sm">
                       Select a plan that meets your business requirements and
                       scale as you grow.
                     </p>
-                    <h4 className="font-semibold">Voice Assistant</h4>
+                    <a href="/voice" className="font-semibold">
+                      Voice Assistant
+                    </a>
                     <p className="text-sm">
                       Select a plan that meets your business requirements and
                       scale as you grow.
                     </p>
-                    <h4 className="font-semibold">Combo Plan</h4>
+                    <a href="/combo" className="font-semibold">
+                      Combo Plan
+                    </a>
                     <p className="text-sm">
                       A convenient plan to gain access to Speech Analytics and
                       Voice Assistant Services
@@ -292,7 +300,9 @@ export default function Navbar() {
               {openDropdown === "company" && (
                 <div className="p-4">
                   <div className="space-y-2">
-                    <h4 className="font-semibold">About us</h4>
+                    <a href="/about-us" className="font-semibold">
+                      About us
+                    </a>
                     <div className="flex space-x-2 gap-4">
                       <FaFacebook />
                       <FaLinkedin />
