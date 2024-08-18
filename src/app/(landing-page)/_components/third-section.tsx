@@ -59,7 +59,7 @@ export const ThirdSection: React.FC = () => {
               <motion.img
                 src={card.imgSrc}
                 alt={card.imgAlt}
-                animate={{ translateY: [-30, 30], rotate: 360 }}
+                animate={{ translateY: [-30, 30], rotate: 365 }}
                 transition={{
                   repeat: Infinity,
                   repeatType: "mirror",
