@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
-import Script from "next/script"; // Import Script from next/script
+
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
@@ -20,13 +20,6 @@ export default function RootLayout({
     <html lang="en" className="relative">
       <body className={cn(dmSans.className, "antialiased bg-[#fff]")}>
         {children}
-
-        {/* JavaScript code for snow effect*/}
-        <Script src="/snowEffect.js" defer id="snow-effect-script">
-          {`
-            console.log('JavaScript code running in RootLayout');
-          `}
-        </Script>
       </body>
     </html>
   );

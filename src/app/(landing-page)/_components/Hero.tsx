@@ -3,9 +3,8 @@
 import ArrowRight from "@/assets/arrow-right.svg";
 import { Button } from "@/components/ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import Wave from "@/assets/wave.png";
-import secondImage from "@/assets/second-home.png";
 import Image from "next/image";
 
 export const Hero = () => {
@@ -15,6 +14,20 @@ export const Hero = () => {
     offset: ["start end", "end start"],
   });
   const translateY = useTransform(scrollYProgress, [0, 1], [200, -200]);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = '/snowEffect.js';
+    script.defer = true;
+    script.id = 'snow-effect-script';
+    document.body.appendChild(script);
+
+    console.log('Snow effect script loaded in Hero');
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <section

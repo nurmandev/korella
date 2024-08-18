@@ -1,5 +1,4 @@
 "use client";
-
 import Navbar from "@/components/Navbar";
 import { Hero } from "./_components/Hero";
 import { SecondSection } from "@/app/(landing-page)/_components/second-section";
@@ -13,6 +12,7 @@ export default function Home() {
       <div className="block ">
         <Navbar />
       </div>
+
       <Hero />
       <SecondSection />
       <ThirdSection />
