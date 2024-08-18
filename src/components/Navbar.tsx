@@ -191,10 +191,7 @@ export default function Navbar() {
                 <div className="flex items-center space-x-2">
                   <div>
                     <div className="flex">
-                      <a
-                        href="/about-us"
-                        className="font-semibold py-5"
-                      >
+                      <a href="/about-us" className="font-semibold py-5">
                         About us
                       </a>
                     </div>
@@ -306,9 +303,11 @@ export default function Navbar() {
               {openDropdown === "company" && (
                 <div className="p-4">
                   <div className="space-y-2">
-                    <a href="/about-us" className="font-semibold">
-                      About us
-                    </a>
+                    <div className="flex">
+                      <a href="/about-us" className="font-semibold py-5">
+                        About us
+                      </a>
+                    </div>
                     <div className="flex space-x-2 gap-4">
                       <FaFacebook />
                       <FaLinkedin />
