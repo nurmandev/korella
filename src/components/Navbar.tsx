@@ -190,9 +190,15 @@ export default function Navbar() {
               <div className="w-2/3 space-y-2">
                 <div className="flex items-center space-x-2">
                   <div>
-                    <a href="/about-us" className="font-semibold mb-2">
-                      About us
-                    </a>
+                    <div className="flex">
+                      <a
+                        href="/about-us"
+                        className="font-semibold py-5"
+                      >
+                        About us
+                      </a>
+                    </div>
+
                     <div className="flex gap-5 space-x-2">
                       <FaFacebook />
                       <FaLinkedin />
