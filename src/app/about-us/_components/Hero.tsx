@@ -7,14 +7,14 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <section className="relative flex flex-col items-start max-w-screen-xl p-6 md:mx-20 lg:px-0 pt-16 md:pt-52 gap-16 opacity-100 font-space-grotesk">
-      <div className="text-left">
+    <section className="relative flex flex-col items-start max-w-screen-xl p-6 md:px-20 lg:px-0 pt-16 md:pt-52 gap-16 opacity-100 font-space-grotesk mx-auto">
+      <div className="text-left w-full">
         <div className="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 lg:mb-0">
             Who We Are
           </h1>
           <button className="bg-black border-2 border-white text-white py-2 px-4 flex gap-1 items-center rounded-lg mt-4 lg:mt-0 hover:bg-white hover:text-[#0d1132]">
-            Get Started <ArrowRight className="w-5 h-5" />
+            Explore <ArrowRight className="w-5 h-5" />
           </button>
         </div>
 
@@ -29,16 +29,15 @@ export const Hero = () => {
         </p>
       </div>
 
-      <div className="flex justify-between w-full">
-        <div className="flex-1">
-          <Image
-            src={HomeImage}
-            alt="Team working"
-            width={1312}
-            height={829}
-            className="rounded-lg"
-          />
-        </div>
+      <div className="w-full">
+        <Image
+          src={HomeImage}
+          alt="Team working"
+          layout="responsive"
+          width={1312}
+          height={829}
+          className="rounded-lg"
+        />
       </div>
     </section>
   );
