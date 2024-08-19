@@ -28,7 +28,7 @@ const pricingTiers = [
     buttonText: "Get started",
     popular: false,
     inverse: false,
-    features: ["For usage less than 100 hours per month"],
+    features: ["For usage more than 100 hours per month"],
   },
 ];
 

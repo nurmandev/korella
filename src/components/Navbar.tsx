@@ -1,4 +1,7 @@
 "use client";
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 import {
   FaChevronDown,
@@ -9,12 +12,10 @@ import {
   FaLinkedin,
   FaChevronRight,
 } from "react-icons/fa";
-import Image from "next/image";
-import Logo from "@/assets/korella-logo.jpg";
 import { CiMenuFries } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
 import { ArrowRight } from "lucide-react";
-import { useState } from "react";
+import Logo from "@/assets/korella-logo.jpg";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,9 +29,9 @@ export default function Navbar() {
     <>
       <nav className="md:absolute md:left-1/2 top-0 md:-translate-x-1/2 bg-white border-2 mx-auto justify-center align-middle w-full md:w-[1000px] rounded z-50 overflow-x-clip md:my-10 font-space-grotesk">
         <div className="container mx-auto px-4 py-4 flex items-center text-left justify-between">
-          <a href="/">
+          <Link href="/">
             <Image src={Logo} alt="Korella AI Logo" height={100} width={100} />
-          </a>
+          </Link>
 
           <div className="hidden md:flex space-x-8 items-center mx-auto">
             <button

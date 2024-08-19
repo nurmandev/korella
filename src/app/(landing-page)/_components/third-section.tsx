@@ -4,7 +4,7 @@ import React from "react";
 import ArrowRight from "@/assets/arrow-right.svg";
 import loAsset from "@/assets/loAsset.png";
 import Cog from "@/assets/cog.png";
-import Image from "next/image";
+import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -36,13 +36,17 @@ export const ThirdSection: React.FC = () => {
               imgSrc: loAsset.src,
               imgAlt: "Speech Analytics",
               secondaryButtonText: "Unveil the Magic",
+              link: "/speech", // Separate link for Speech Analytics
+              secondLink: "/contact",
             },
             {
               title: "Korella AI assistant for your business.",
               buttonText: "Voice Assistant",
               imgSrc: Cog.src,
-              imgAlt: "Cog Image",
+              imgAlt: "Voice Assistant",
               secondaryButtonText: "Summon Your Korella",
+              link: "/voice", // Separate link for Voice Assistant
+              secondLink: "/contact",
             },
           ].map((card, index) => (
             <div
@@ -53,9 +57,12 @@ export const ThirdSection: React.FC = () => {
               <h2 className="font-space-grotesk text-2xl md:text-3xl lg:text-4xl font-light leading-snug md:leading-[61.25px]">
                 {card.title}
               </h2>
-              <button className="bg-transparent border-2 border-white text-white py-2 px-4 rounded-full hover:bg-white hover:text-[#0d1132] mt-4">
-                {card.buttonText}
-              </button>
+              <Link href={card.link}>
+                <button className="bg-transparent border-2 border-white text-white py-2 px-4 rounded-full hover:bg-white hover:text-[#0d1132] mt-4">
+                  {card.buttonText}
+                </button>
+              </Link>
+
               <motion.img
                 src={card.imgSrc}
                 alt={card.imgAlt}
@@ -68,10 +75,11 @@ export const ThirdSection: React.FC = () => {
                 }}
                 className="my-4 w-full h-auto"
               />
-
-              <button className="bg-transparent border-2 border-white text-white py-2 px-4 flex gap-1 items-center rounded-full hover:bg-white hover:text-[#0d1132] mt-4">
-                {card.secondaryButtonText} <ArrowRight className="size-5" />
-              </button>
+              <Link href={card.secondLink}>
+                <button className="bg-transparent border-2 border-white text-white py-2 px-4 flex gap-1 items-center rounded-full hover:bg-white hover:text-[#0d1132] mt-4">
+                  {card.secondaryButtonText} <ArrowRight className="size-5" />
+                </button>
+              </Link>
             </div>
           ))}
         </div>
