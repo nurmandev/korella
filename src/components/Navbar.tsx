@@ -71,17 +71,17 @@ export default function Navbar() {
             </button>
 
             <div className="flex justify-center gap-1 items-center">
-              <a href="/contact">Contact Us</a>
+              <Link href="/contact">Contact Us</Link>
             </div>
           </div>
 
           <div className="flex justify-center gap-1 items-center">
-            <a
+            <Link
               href="#"
               className="bg-black text-white px-4 py-2 rounded hidden md:inline-flex items-center"
             >
               Get Started <ArrowRight className="ml-2 size-5" />
-            </a>
+            </Link>
           </div>
 
           <button
@@ -104,7 +104,10 @@ export default function Navbar() {
                 </p>
               </div>
               <div className="w-2/3 space-y-2">
-                <a href="/product" className="flex gap-3 items-start space-x-2">
+                <Link
+                  href="/product"
+                  className="flex gap-3 items-start space-x-2"
+                >
                   <span className="text-blue-600 text-2xl">*</span>
                   <div>
                     <h4 className="font-semibold mb-2">Speech Analytics</h4>
@@ -115,24 +118,25 @@ export default function Navbar() {
                       language.
                     </p>
                   </div>
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="/products"
                   className="flex gap-3 items-start space-x-2"
                 >
                   <span className="text-blue-500 text-2xl">*</span>
                   <div>
-                    <a href="/products" className="font-semibold mb-2">
+                    <Link href="/products" className="font-semibold mb-2">
                       Voice Assistant
-                    </a>
+                    </Link>
+
                     <p className="text-sm">
                       Streamline customer interactions with advanced AI,
                       providing efficient, personalized support and reducing
                       wait times.
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           )}
@@ -148,7 +152,10 @@ export default function Navbar() {
                 </p>
               </div>
               <div className="w-2/3 space-y-2">
-                <a href="/speech" className="flex gap-3 items-start space-x-2">
+                <Link
+                  href="/speech"
+                  className="flex gap-3 items-start space-x-2"
+                >
                   <span className="text-blue-600 text-2xl">*</span>
                   <div>
                     <h4 className="font-semibold mb-2">Speech Analytics</h4>
@@ -157,8 +164,12 @@ export default function Navbar() {
                       scale as you grow.
                     </p>
                   </div>
-                </a>
-                <a href="/voice" className="flex gap-3 items-start space-x-2">
+                </Link>
+
+                <Link
+                  href="/voice"
+                  className="flex gap-3 items-start space-x-2"
+                >
                   <span className="text-blue-600 text-2xl">*</span>
                   <div>
                     <h4 className="font-semibold mb-2">Voice Assistant</h4>
@@ -167,8 +178,12 @@ export default function Navbar() {
                       scale as you grow.
                     </p>
                   </div>
-                </a>
-                <a href="/combo" className="flex gap-3 items-start space-x-2">
+                </Link>
+
+                <Link
+                  href="/combo"
+                  className="flex gap-3 items-start space-x-2"
+                >
                   <span className="text-blue-600 text-2xl">*</span>
                   <div>
                     <h4 className="font-semibold mb-2">Combo Plan</h4>
@@ -177,7 +192,7 @@ export default function Navbar() {
                       Voice Assistant Services
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           )}
@@ -192,9 +207,9 @@ export default function Navbar() {
                 <div className="flex items-center space-x-2">
                   <div>
                     <div className="flex">
-                      <a href="/about-us" className="font-semibold py-5">
+                      <Link href="/about-us" className="font-semibold py-5">
                         About us
-                      </a>
+                      </Link>
                     </div>
 
                     <div className="flex gap-5 space-x-2">

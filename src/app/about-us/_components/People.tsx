@@ -104,7 +104,7 @@ export const People = () => {
           </p>
 
           <Link href="/contact">
-            <button className="bg-[#0F1340] text-white py-2 px-4 flex gap-1 items-center rounded-lg mt-10 hover:bg-white hover:text-[#0d1132]">
+            <button className="bg-[#0F1340] text-white border-2 border-[#0F1340] py-2 px-4 flex gap-1 items-center rounded-lg mt-10 hover:bg-white hover:text-[#0d1132]">
               Get in touch <ArrowRight className="w-5 h-5" />
             </button>
           </Link>
