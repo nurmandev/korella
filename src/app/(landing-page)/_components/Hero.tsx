@@ -7,6 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Wave from "@/assets/wave.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Hero = () => {
   const heroRef = useRef(null);
@@ -28,7 +29,7 @@ export const Hero = () => {
             Discover how AI can transform your business
           </div>
           <div className="">
-            <h1 className="text-2xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-white to-gray-300 text-transparent bg-clip-text mt-6 px-2">
+            <h1 className="text-2xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-white to-gray-300 text-transparent bg-clip-text m-6 p-2">
               Empowering Your Business with AI-Driven Insights
             </h1>
             <p className="mt-4 text-lg text-gray-300 md:text-xl">
@@ -36,10 +37,12 @@ export const Hero = () => {
               cutting-edge AI solutions.
             </p>
             <div className="flex justify-center gap-1 items-center mt-[30px] text-black">
-              <Button>
-                Explore
-                <ArrowRight className="size-5" />
-              </Button>
+              <Link href="/product">
+                <Button>
+                  Explore
+                  <ArrowRight className="size-5" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
