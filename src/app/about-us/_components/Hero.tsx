@@ -3,6 +3,7 @@
 import SnowWrapper from "./../../../../public/snowEffect";
 import ArrowRight from "@/assets/arrow-right.svg";
 import HomeImage from "@/assets/home-image.png";
+import Link from "next/link";
 
 import Image from "next/image";
 
@@ -15,9 +16,11 @@ export const Hero = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 lg:mb-0">
               Who We Are
             </h1>
-            <button className="bg-black border-2 border-white text-white py-2 px-4 flex gap-1 items-center rounded-lg mt-4 lg:mt-0 hover:bg-white hover:text-[#0d1132]">
-              Explore <ArrowRight className="w-5 h-5" />
-            </button>
+            <Link href="/contact">
+              <button className="bg-black border-2 border-black text-white py-2 px-4 flex gap-1 items-center rounded-lg mt-4 lg:mt-0 hover:bg-white hover:text-[#0d1132]">
+                Explore <ArrowRight className="w-5 h-5" />
+              </button>
+            </Link>
           </div>
 
           <p className="text-xl lg:text-2xl font-light mb-8">

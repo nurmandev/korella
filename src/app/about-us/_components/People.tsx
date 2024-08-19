@@ -5,6 +5,7 @@ import Image1 from "@/assets/people1.png";
 import Image2 from "@/assets/people2.png";
 import Image3 from "@/assets/people3.png";
 import ArrowRight from "@/assets/arrow-right.svg";
+import Link from "next/link";
 
 import Image from "next/image";
 
@@ -101,9 +102,12 @@ export const People = () => {
             Whether you&apos;re interested in our products or want to join our
             team, we&apos;d love to hear from you.
           </p>
-          <button className="bg-[#0F1340] text-white py-2 px-4 flex gap-1 items-center rounded-lg mt-10 hover:bg-white hover:text-[#0d1132]">
-            Get in touch <ArrowRight className="w-5 h-5" />
-          </button>
+
+          <Link href="/contact">
+            <button className="bg-[#0F1340] text-white py-2 px-4 flex gap-1 items-center rounded-lg mt-10 hover:bg-white hover:text-[#0d1132]">
+              Get in touch <ArrowRight className="w-5 h-5" />
+            </button>
+          </Link>
         </div>
       </div>
     </section>
