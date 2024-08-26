@@ -6,9 +6,7 @@ import { ThirdSection } from "./_components/thirdSection";
 export default function Price() {
   return (
     <>
-      <div className="block">
-        <Navbar />
-      </div>
+      <Navbar />
       <Hero />
       <Pricing />
       <ThirdSection />

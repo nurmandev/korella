@@ -36,7 +36,7 @@ export const ThirdSection: React.FC = () => {
               imgSrc: loAsset.src,
               imgAlt: "Speech Analytics",
               secondaryButtonText: "Unveil the Magic",
-              link: "/speech", // Separate link for Speech Analytics
+              link: "/product", // Separate link for Speech Analytics
               secondLink: "/contact",
             },
             {
@@ -45,7 +45,7 @@ export const ThirdSection: React.FC = () => {
               imgSrc: Cog.src,
               imgAlt: "Voice Assistant",
               secondaryButtonText: "Summon Your Korella",
-              link: "/voice", // Separate link for Voice Assistant
+              link: "/products", // Separate link for Voice Assistant
               secondLink: "/contact",
             },
           ].map((card, index) => (

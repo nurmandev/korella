@@ -19,10 +19,6 @@ export const Hero = () => {
         ref={heroRef}
         className="relative flex flex-col items-center justify-center h-screen text-center bg-black overflow-hidden"
       >
-        <div className="hidden md:block">
-          <Navbar />
-        </div>
-
         {/* Hero Content */}
         <div className="container relative z-10 text-white text-center">
           <div className="">

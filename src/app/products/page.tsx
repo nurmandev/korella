@@ -10,9 +10,7 @@ import { FeatureSection } from "./_components/Features";
 export default function ProductsPage() {
   return (
     <>
-      <div className="block">
-        <Navbar />
-      </div>
+      <Navbar />
       <Hero />
       <SecondSection />
       <VoiceAnalysis />

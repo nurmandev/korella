@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Story } from "./_components/Story";
 import { Mission } from "./_components/Mission";
-import { People } from "./_components/People";
+// import { People } from "./_components/People";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <Story />
       <Mission />
-      <People />
+      {/* <People /> */}
       <Footer />
     </>
   );

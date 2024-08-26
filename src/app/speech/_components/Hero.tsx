@@ -19,14 +19,10 @@ export const Hero = () => {
         ref={heroRef}
         className="relative flex flex-col items-center justify-center h-screen text-center bg-black overflow-hidden"
       >
-        <div className="hidden md:block">
-          <Navbar />
-        </div>
-
         {/* Hero Content */}
         <div className="container relative z-10 text-white text-center">
           <div className="">
-            <h1 className="text-2xl md:text-5xl font-bold tracking-tighter bg-gradient-to-b from-white to-gray-300 text-transparent bg-clip-text mt-6 px-2">
+            <h1 className="text-2xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-white to-gray-300 text-transparent bg-clip-text m-6 p-2">
               Speech Analytics Pricing Plans
             </h1>
             <p className="mt-4 text-lg text-gray-300 md:text-xl">
