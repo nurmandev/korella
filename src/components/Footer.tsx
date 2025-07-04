@@ -39,7 +39,7 @@ export const Footer = () => {
         </nav>
       </div>
       <div className="text-center text-gray-400 text-xs mt-6">
-        © 2024 Korella.ai. All Rights Reserved.
+        © {new Date().getFullYear()} Korella.ai. All Rights Reserved.
       </div>
     </section>
   );
